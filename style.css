@@ -397,7 +397,7 @@ footer a:visited{
 
 
 .banner2 .activit1{
-  background-image: url(Images/Temple.jpg);
+  background-image: url(images/Temple.jpg);
   background-position: 50% 50%;
   justify-content: center;
 
@@ -407,7 +407,7 @@ footer a:visited{
 
 
 .banner2 .activit2{
-  background-image: url(Images/Shark.jpg);
+  background-image: url(images/Shark.jpg);
   background-position: 10% 60%;
 
   flex:0 1 200px;
@@ -416,7 +416,7 @@ footer a:visited{
 
 
 .banner2 .activit3{
-  background-image: url(Images/bbq.jpg);
+  background-image: url(images/bbq.jpg);
   background-position: 50% 30%;
 
   flex:0 1 200px;
@@ -424,7 +424,7 @@ footer a:visited{
 }
 
 .banner2 .activit4{
-  background-image: url(Images/dive.jpg);
+  background-image: url(images/dive.jpg);
   background-position: 20% 20%;
 
   flex:0 1 400px;
