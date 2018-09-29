@@ -1,0 +1,549 @@
+/* Definition des couleurs */
+:root {
+  --blue: #e3f2fd;
+  --cara:#002233;
+  --bluefonc: #002233;
+  --white: #FFFCF9;
+  --orange: #ff9100;
+  --purple:#ede7f6;
+  --green:#e8f5e9;
+  --teal:#e0f2f1;
+  --blue:#e3f2fd;
+}
+
+body {
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 12px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+header {
+  display:flex;
+  justify-content: space-between;
+  background-color: var(--blue);
+  color: var(--cara);
+
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+header .Current{
+  font-weight: bold;
+}
+
+header a {
+  text-decoration: none;
+    /* enlever le soulignement de liens*/
+  padding-left: 30px;
+}
+
+header a:hover{
+  background-color: var(--blue);
+  color: var(--cara);
+}
+
+header a:link{
+  background-color: var(--blue);
+  color: var(--cara);
+}
+
+header a:visited{
+  background-color: var(--blue);
+  color: var(--cara);
+}
+
+
+nav {
+  align-self: center;
+    /* on centre les liens au milieu */
+  text-decoration: none;
+}
+
+/* L'image de la plage et son texte */
+/* -------------------------------------- */
+.container{
+  font-size: 14px;
+  position:relative;
+  color: black;
+
+  display:block;
+  margin-left: auto;
+
+  text-align: center;
+  margin: 0 0 0 0;
+
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+
+}
+
+.container .caption {
+  position:absolute;
+  top:10%;
+  left:20%;
+  right:20%;
+}
+
+.container .caption p{
+  line-height: normal;
+}
+
+.banner{
+  width:100%;
+  /* max-width: 1000px; */
+  max-height: 800px;
+  max-width: 1800px;
+}
+
+/* -------------------------------------- */
+/* Image gallery */
+
+.gallery{
+  background-color: var(--bluefonc);
+  color:white;
+
+  margin-top: 0px;
+  padding-top: 0px;
+}
+
+.gallery h2{
+  padding:20px;
+  text-align:center;
+  color:var(--orange);
+}
+
+.gallery a{
+  color:var(--orange);
+}
+
+.gallery ul {
+  list-style-type: none;
+  padding: calc(8% - 6px);
+  margin: 0;
+
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.gallery li {
+  flex: 1 0 150px;
+  height: 300px;
+  margin: 20px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.gallery h3{
+  font-size: 13px;
+  text-align: center;
+}
+.gallery h4{
+  font-size: 10px;
+}
+
+
+.temple {
+  background-image: url(images/Temple.jpg);
+  background-position: right 50% bottom 50%;
+}
+
+.temple h3{
+  margin-top: 290px;
+  background-color: var(--orange);
+  line-height:2;
+}
+
+.temple h4{
+  background-color: var(--bluefonc);
+  margin-top: none;
+}
+
+
+.aquarium {
+  background-image: url(images/Shark.jpg);
+  background-position: right 20% bottom 50%;
+}
+
+.aquarium h3{
+  margin-top: 290px;
+  background-color: var(--orange);
+  line-height:2;
+}
+
+.aquarium h4{
+  background-color: var(--bluefonc);
+  margin-top: none;
+}
+
+.bbq {
+  background-image: url(images/bbq.jpg);
+  background-position: right 50% bottom 50%;
+}
+
+.bbq h3{
+  margin-top: 290px;
+  background-color: var(--orange);
+  line-height:2;
+}
+
+.bbq h4{
+  background-color: var(--bluefonc);
+  margin-top: none;
+}
+
+.diving {
+  background-image: url(images/dive.jpg);
+  background-position: right 20% bottom 50%;
+}
+
+.diving h3{
+  margin-top: 290px;
+  background-color: var(--orange);
+  line-height:2;
+}
+
+.diving h4{
+  background-color: var(--bluefonc);
+  margin-top: none;
+}
+
+
+/* beach gallery */
+/* -------------------------------------------------- */
+.beach{
+  background-color: white;
+}
+
+.beach h2{
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.beach ul{
+  list-style-type: none;
+  margin-left: 0;
+  display:block;
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+.beach li{
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  width:100%;
+}
+
+.beach h3{
+  font-size: 14px;
+  color:var(--bluefonc);
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.beach h4{
+  font-size: 12px;
+  color:white;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.beach p{
+  font-size: 10px;
+  color:white;
+  margin-top: 10px;
+}
+
+.beach1 {
+  background-image: url(images/Beach1.jpg);
+  background-position: right 50% bottom 30%;
+
+  height:300px;
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.beach2 {
+  background-image: url(images/Beach2.jpg);
+  background-position: right 50% bottom 30%;
+
+  height:300px;
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.beach_box{
+  background: var(--orange);
+  border-radius:50%;
+  width:160px;
+  height:160px;
+  border:2px solid #e55100;
+
+  align-items: left;
+  align-self: center;
+  align-content: center;
+  text-align: center;
+  margin-left: 20px;
+}
+
+.beach3 {
+  background-image: url(images/Beach3.jpg);
+  background-position: right 50% bottom 10%;
+
+  height:300px;
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.beach4 {
+  background-image: url(images/Beach4.jpg);
+  background-position: right 50% bottom 10%;
+
+  height:300px;
+  display: flex;
+  margin-bottom: 10px;
+}
+
+/* footer */
+/* -------------------------------------- */
+footer{
+  background-color:var(--bluefonc);
+  /* position:absolute; */
+  position:relative;
+  bottom:5px;;
+  width:100%;
+  padding-top:10px;
+  height:50px;
+
+  font-size: 12px;
+  color:white;
+  text-align: center;
+}
+
+footer p {
+  background-color:var(--bluefonc);
+  text-align: center;
+}
+
+footer .SMicons {
+  background-color:var(--bluefonc);
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+footer ul {
+  padding-left: 0;
+}
+
+footer li{
+  list-style-type: none;
+  display: inline;
+  text-align: center;
+  padding-left: 0;
+  padding-right: 10px;
+}
+
+footer a{
+  padding-left: 0;
+  text-decoration: none;
+}
+
+footer a:link{
+  color:white;
+}
+
+footer a:visited{
+  color:white;
+}
+
+/* ----------------------------- */
+/* ACTIVITES */
+.banner1{
+  display:block;
+  margin:0 auto;
+  display:center;
+
+  width:100%;
+}
+
+
+.banner2 {
+  display:flex;
+}
+
+.banner .activ{
+
+  flex-wrap:wrap;
+  align-items: stretch;
+  justify-content: space-around;
+}
+
+.banner2 ul{
+  padding-left: 0;
+}
+
+.banner2 li{
+  background-repeat: no-repeat;
+  background-size:cover;
+  list-style-type: none;
+  height:200px;
+}
+
+.banner2 h1{
+  text-shadow:2px 2px 6px #000;
+}
+
+
+.banner2 .activit1{
+  background-image: url(Images/Temple.jpg);
+  background-position: 50% 50%;
+  justify-content: center;
+
+  flex:0 1 200px;
+  max-width:100%;
+}
+
+
+.banner2 .activit2{
+  background-image: url(Images/Shark.jpg);
+  background-position: 10% 60%;
+
+  flex:0 1 200px;
+  max-width:100%;
+}
+
+
+.banner2 .activit3{
+  background-image: url(Images/bbq.jpg);
+  background-position: 50% 30%;
+
+  flex:0 1 200px;
+  max-width:100%;
+}
+
+.banner2 .activit4{
+  background-image: url(Images/dive.jpg);
+  background-position: 20% 20%;
+
+  flex:0 1 400px;
+  max-width:100%;
+}
+
+.banner2 .headact1{
+  background-color: var(--teal);
+
+  margin-bottom: 40px;
+}
+
+.banner2 .headact2{
+  background-color: var(--blue);
+
+  margin-bottom: 40px;
+}
+
+.banner2 .headact3{
+  background-color: var(--green);
+
+  margin-bottom: 40px;
+}
+
+.banner2 .headact4{
+  background-color: var(--teal);
+}
+
+.banner2 .direction{
+  color:var(--orange);
+  background-color: var(--bluefonc);
+
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+
+
+/* LES PLAGES */
+
+.cards {
+  display:flex;
+  flex-wrap:wrap;
+  align-items: stretch;
+  justify-content: space-around;
+}
+
+.card{
+  flex:0 1 300px;
+  margin:10px;
+
+  border: 1px solid #ccc;
+  box-shadow: 2px 2px 6px 0px;
+}
+
+.cards2 {
+  display:flex;
+  flex-wrap:wrap;
+  align-items: stretch;
+  justify-content: space-around;
+}
+
+.card2{
+  flex:0 1 300px;
+  margin:10px;
+
+  border: 1px solid #ccc;
+  box-shadow: 2px 2px 6px 0px;
+}
+
+.cardpics{
+  max-width:100%;
+}
+
+.card h2{
+  color:var(--bluefonc);
+  font-weight:bold;
+}
+
+.card2 h2{
+  color:var(--bluefonc);
+  font-weight:bold;
+}
+
+.FormHead{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 14px;
+  color: var(--bleufonc);
+
+  margin-bottom: 20px;
+}
+
+.formulaire{
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+input[type=text], select, textarea {
+   width: 100%;
+   padding: 12px;
+   border: 4px solid var(--blue);
+   border-radius: 4px;
+   box-sizing: border-box;
+   margin-top: 6px;
+   margin-bottom: 16px;
+}
+
+
+input[type=envoyer] {
+   background-color: #4CAF50;
+   color: white;
+   padding: 12px 20px;
+   border: none;
+   border-radius: 4px;
+   cursor: pointer;
+}
+
+.formulaire .bout1:hover{
+    background-color: var(--blue);
+    color: var(--cara);
+}
