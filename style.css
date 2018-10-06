@@ -1,7 +1,7 @@
 /* Definition des couleurs */
 :root {
   --blue: #e3f2fd;
-  --cara:#002233;
+  --cara: #002233;
   --bluefonc: #002233;
   --white: #FFFCF9;
   --orange: #ff9100;
@@ -17,6 +17,7 @@ body {
   margin-left: 50px;
   margin-right: 50px;
 }
+
 
 header {
   display:flex;
@@ -75,7 +76,6 @@ nav {
 
   margin-bottom: 0px;
   padding-bottom: 0px;
-
 }
 
 .container .caption {
@@ -110,6 +110,8 @@ nav {
 .gallery h2{
   padding:20px;
   text-align:center;
+                        margin-top:0;
+
   color:var(--orange);
 }
 
@@ -208,7 +210,7 @@ nav {
   margin-top: none;
 }
 
-
+/* -------------------------------------------------- */
 /* beach gallery */
 /* -------------------------------------------------- */
 .beach{
@@ -360,6 +362,8 @@ footer a:visited{
 
 /* ----------------------------- */
 /* ACTIVITES */
+/* ----------------------------- */
+
 .banner1{
   display:block;
   margin:0 auto;
@@ -462,17 +466,63 @@ footer a:visited{
 }
 
 
-
+/* ----------------------------- */
 /* LES PLAGES */
+/* ----------------------------- */
+.containerpic{
+  display:block;
+}
+
+.picdep{
+  background-image: url(Images/Beach4.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: white;
+
+  background-position: right 50% bottom 50%;
+  height:400px;
+  max-width:100%;
+}
+
+  .textcontainer{
+    display:block;
+    margin:-15% 300px 0 10px;
+    max-width:100%;
+    width:60%;
+  }
+
+    .textdep{
+      color:var(--bluefonc);
+      background-color: var(--orange);
+      padding-left: 5px;
+      padding-right: 5px;
+      text-align: justify;
+    }
+
+    .textdepdes{
+      margin-bottom: 0;
+      padding-bottom: 5px;
+    }
+
+    .textdep2{
+      background-color: black;
+      color:var(--white);
+      padding-left: 5px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+
 
 .cards {
   display:flex;
   flex-wrap:wrap;
   align-items: stretch;
   justify-content: space-around;
+
+  margin-top: 25px;
 }
 
-.card{
+.card {
   flex:0 1 300px;
   margin:10px;
 
@@ -513,12 +563,12 @@ footer a:visited{
   padding-top: 10px;
   padding-bottom: 10px;
   font-size: 14px;
-  color: var(--bleufonc);
+  color: var(--bluefonc);
 
   margin-bottom: 20px;
 }
 
-.formulaire{
+/* .formulaire{
   margin-top: 10px;
   margin-bottom: 20px;
 }
@@ -546,4 +596,4 @@ input[type=envoyer] {
 .formulaire .bout1:hover{
     background-color: var(--blue);
     color: var(--cara);
-}
+} */
